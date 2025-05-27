@@ -88,7 +88,6 @@ export default class TikTokWsClient extends (WebSocket as WebSocketConstructor) 
         } catch (err) {
             this.emit('messageDecodingFailed', err);
         }
-
     }
 
     /**

@@ -1,3 +1,4 @@
+// utilities.ts
 import * as tikTokSchema from '@/types/tiktok-schema';
 import { MessageFns, WebcastResponse, WebcastWebsocketMessage } from '@/types/tiktok-schema';
 import {
@@ -83,7 +84,6 @@ export async function deserializeWebSocketMessage(binaryMessage: Uint8Array): Pr
         ...rawWebcastWebSocketMessage,
         webcastResponse
     };
-
 }
 
 export function validateAndNormalizeUniqueId(uniqueId: string) {
